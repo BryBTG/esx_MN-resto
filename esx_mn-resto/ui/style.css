@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    border-style: none;
+}
+
+.body{
+    background-color: rgba(0, 0, 0 , 0.7);
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 70px;
+    left: 50px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.buttons{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-family: 'Ubuntu', sans-serif;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.buttons button{
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+h1{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    margin-top: 10px;
+    font-size: 2em;
+}
+
+.close{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+button:hover{
+    background-color: rgba(255, 255, 255 , 0.3);
+}
+
+.buttons::-webkit-scrollbar { 
+    width: 0 !important 
+}
